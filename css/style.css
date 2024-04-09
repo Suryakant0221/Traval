@@ -443,7 +443,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 h6,
@@ -481,7 +481,7 @@ h6,
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -9921,7 +9921,7 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-  padding: 30px 15px;
+  padding: 10px 15px;
   color: #212121;
   font-weight: 500;
   outline: none;
@@ -9941,7 +9941,7 @@ h6,
 @media (min-width: 992px) {
   #header-carousel,
   .page-header {
-    margin-top: -42px;
+    margin-top: -80px;
   }
 }
 
@@ -10190,4 +10190,129 @@ h6,
 
 .ml {
   margin-left: 8px;
+}
+/* term and privacy */
+.container1 {
+  padding: 50px;
+  margin-left: 2%;
+}
+
+.container1 h2 {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.container1 p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container1 h2,
+.container1 p {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.container1 h2:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.container1 p:nth-child(odd) {
+  animation-delay: 1s;
+}
+
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+label {
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .container1 {
+    padding: 5%;
+  }
+
+  .container1 h2 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .container1 p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .container1 {
+    padding: 3%;
+  }
+
+  .container1 h2 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .container1 p {
+    font-size: 12px;
+  }
+}
+
+.img-div,
+.img-c,
+.img-b {
+  width: 100%; /* Adjusts image width to fit container */
+  height: 210px; /* Ensures aspect ratio is maintained */
+}
+
+.t-center {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .img-div {
+    width: 350px;
+  }
+
+  .img-c {
+    width: 300px;
+  }
+
+  .img-b {
+    width: 250px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .img-div {
+    width: 250px;
+  }
+
+  .img-c {
+    width: 200px;
+  }
+
+  .img-b {
+    width: 150px;
+  }
 }
