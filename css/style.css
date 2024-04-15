@@ -10302,17 +10302,35 @@ label {
   }
 }
 
+/* @media only screen and (max-width: 680px) {
+  .logo-img {
+    width: 80px;
+    height: 80px;
+  }
+} */
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .img-div {
-    width: 250px;
+    width: 400px;
   }
 
   .img-c {
-    width: 200px;
+    width: 385px;
   }
 
   .img-b {
     width: 150px;
   }
+}
+
+.mg-r {
+  margin-right: 30px;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
 }

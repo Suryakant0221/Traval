@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i> syedaasif544@gmail.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i> info@asiftourstravels.com</p>
                         <p class="text-body px-3">|</p>
                         <p><i class="fa fa-phone-alt mr-2"></i>+916005716371</p>
                     </div>
@@ -81,12 +81,11 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="destination.html" class="nav-item nav-link">Destination</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Links</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="gallery.html" class="dropdown-item">Gallery</a>
-                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="destination.html" class="dropdown-item">Destination</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
@@ -474,7 +473,7 @@
                     <p class="text-white">Feel free to reach out to us with any queries or inquiries. Our team is here to assist you in any way possible.</p>
                     <ul class="list-inline text-white m-0">
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Phone: [+916005716371]</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Email: [syedaasif544@gmail.com]</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Email: [info@asiftourstravels.com]</li>
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Rakhi Zakura, Gulshanbad, Hazratbal, Srinagar, J&K -190006T</li>
                     </ul>
                 </div>
@@ -484,23 +483,24 @@
                             <h1 class="text-white m-0">Contact Us Now</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-white p-5">
-                            <form>
+                            <form id="contactForm">
                                 <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
+                                    <input id="name" type="text" class="form-control p-4" placeholder="Your name" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
+                                    <input id="email" type="email" class="form-control p-4" placeholder="Your email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control p-4" placeholder="Your Mobile Number" required="required" />
+                                    <input id="mobileNumber" type="tel" class="form-control p-4" placeholder="Your Mobile Number" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Enter Message" required="required" />
+                                    <input id="message" type="text" class="form-control p-4" placeholder="Enter Message" required="required" />
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary btn-block py-3" type="submit">Submit</button>
+                                    <button id="submitButton" class="btn btn-primary btn-block py-3" type="submit">Submit</button>
                                 </div>
                             </form>
+                            <div id="statusMessage"></div>
                         </div>
                     </div>
                 </div>
@@ -574,7 +574,7 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Asif</a>
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
@@ -589,7 +589,7 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Asif</a>
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
@@ -604,7 +604,7 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Asif</a>
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
@@ -655,7 +655,7 @@
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Rakhi Zakura, Gulshanbad, Hazratbal, Srinagar, J&K -190006T</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+9160057163710</p>
-                <p><i class="fa fa-envelope mr-2"></i> syedaasif544@gmail.com</p>
+                <p><i class="fa fa-envelope mr-2"></i> info@asiftourstravels.com</p>
             </div>
         </div>
     </div>
@@ -666,8 +666,8 @@
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right ">
-                <p class="m-0 text-white-50"> <a href="/Terms&Conditions.html">Terms & Conditions</a>
-                    <a class="ml" href="/Privacy-Policy.html">Privacy Policy</a>
+                <p class="m-0 text-white-50"> <a href="https://beenait.uk/">Designed and developed by :</a>
+                    <a class="mg-r" href="https://beenait.uk/"><img src="img/beenait_log.png" alt="Traveler Logo" class="logo-img" width="150" height="40"></a>
                 </p>
             </div>
         </div>
